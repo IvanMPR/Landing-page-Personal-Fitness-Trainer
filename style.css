@@ -1,0 +1,339 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* Landing Home Page */
+main#showcase {
+  background: url(img/main.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main#showcase:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(229, 229, 229, 0.2), rgba(68, 68, 68, 0.8));
+}
+main#showcase .welcome {
+  text-align: center;
+}
+main#showcase .welcome h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+main#showcase .welcome a {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background: #713d7c;
+  border-radius: 8px;
+}
+main#showcase .welcome a:hover {
+  background: #4f2a56;
+}
+main#showcase .welcome {
+  z-index: 10;
+}
+/* Wrapper Box-Holder */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: auto;
+}
+.icons {
+  padding: 1rem;
+  margin: 1rem 0rem;
+  width: 300px;
+  height: 300px;
+  background: #f4f4f4;
+  text-align: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.icons p {
+  padding: 0rem 1rem;
+}
+.first a {
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  opacity: 0.2;
+  color: #333;
+}
+.first a:hover {
+  opacity: 1;
+}
+
+/* Expanded #Strength */
+.more-info i {
+  opacity: 0.2;
+}
+.more-info i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#expanded #strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f4f4f4;
+}
+#expanded #strength img {
+  width: 58.8%;
+}
+#expanded #strength .more-info {
+  padding: 2rem;
+  margin: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#expanded #strength .more-info h2,
+#expanded #strength .more-info p,
+#expanded #strength .more-info i {
+  padding: 1rem;
+}
+
+/* Wrapper #Cardio */
+.wrapper #cardio {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #333;
+  margin-top: 1rem;
+}
+.wrapper #cardio img {
+  width: 58.8%;
+}
+.wrapper #cardio .more-info {
+  padding: 2rem;
+  margin: 1rem;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapper #cardio .more-info h2,
+.wrapper #cardio .more-info p,
+.wrapper #cardio .more-info i {
+  padding: 1rem;
+}
+#cardio .more-info a,
+#nutrition .more-info a {
+  color: #f4f4f4;
+}
+
+/* Wrapper Recovery  */
+
+.wrapper #recovery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f4f4f4;
+  margin-top: 1rem;
+}
+.wrapper #recovery img {
+  width: 58.8%;
+}
+.wrapper #recovery .more-info {
+  padding: 2rem;
+  margin: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapper #recovery .more-info h2,
+.wrapper #recovery .more-info p,
+.wrapper #recovery .more-info i {
+  padding: 1rem;
+}
+/* Wrapper Nutrition */
+.wrapper #nutrition {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #333;
+  margin-top: 1rem;
+}
+.wrapper #nutrition img {
+  width: 58.8%;
+}
+.wrapper #nutrition .more-info {
+  padding: 2rem;
+  margin: 1rem;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapper #nutrition .more-info h2,
+.wrapper #nutrition .more-info p,
+.wrapper #nutrition .more-info i {
+  padding: 1rem;
+}
+/* Wrapper About */
+
+.wrapper #about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f4f4f4;
+  margin: 1rem 0;
+}
+.wrapper #about img {
+  width: 58.8%;
+}
+.wrapper #about .more-info {
+  padding: 2rem;
+  margin: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapper #about .more-info h2,
+.wrapper #about .more-info p,
+.wrapper #about .more-info i {
+  padding: 1rem;
+}
+.wrapper #about .more-info p:last-of-type {
+  padding: 1rem 1rem 0 1rem;
+}
+#strength .more-info a,
+#recovery .more-info a,
+#about .more-info a {
+  color: #333;
+}
+
+/* Media Querries */
+@media only screen and (max-width: 1600px) and (min-width: 1401px) {
+  .fa-5x {
+    font-size: 3rem;
+  }
+  .icons {
+    justify-content: space-evenly;
+  }
+  .icons h2 {
+    font-size: 1.3rem;
+  }
+  .icons a {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1400px) and (min-width: 601px) {
+  main#showcase {
+    background: url(img/main.jpg) no-repeat center center/cover;
+  }
+  main#showcase .welcome h1 {
+    font-size: 2.3rem;
+  }
+  .icons {
+    width: 90%;
+    height: 300px;
+    justify-content: space-around;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  #strength,
+  #recovery,
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  #cardio,
+  #nutrition {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #expanded #strength img,
+  .wrapper #cardio img,
+  .wrapper #recovery img,
+  .wrapper #nutrition img,
+  .wrapper #about img {
+    width: 100%;
+  }
+  #expanded #strength .more-info,
+  .wrapper #cardio .more-info,
+  .wrapper #recovery .more-info,
+  .wrapper #nutrition .more-info,
+  .wrapper #about .more-info {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main#showcase {
+    background: #333;
+  }
+  main#showcase .welcome h1 {
+    font-size: 2.3rem;
+  }
+  .icons {
+    width: 90%;
+    height: 300px;
+    justify-content: space-around;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  #strength,
+  #recovery,
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  #cardio,
+  #nutrition {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #expanded #strength img,
+  .wrapper #cardio img,
+  .wrapper #recovery img,
+  .wrapper #nutrition img,
+  .wrapper #about img {
+    width: 100%;
+  }
+  #expanded #strength .more-info,
+  .wrapper #cardio .more-info,
+  .wrapper #recovery .more-info,
+  .wrapper #nutrition .more-info,
+  .wrapper #about .more-info {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+}
